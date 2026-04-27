@@ -1,0 +1,899 @@
+[
+  {
+    "question": "Welcher SQL-Befehl liest Daten aus einer Tabelle?",
+    "type": "mc",
+    "options": ["INSERT", "SELECT", "DELETE", "UPDATE"],
+    "answer": "SELECT",
+    "explanation": "SELECT wird verwendet, um Daten aus Tabellen abzufragen."
+  },
+  {
+    "question": "Welcher Befehl fügt neue Daten ein?",
+    "type": "text",
+    "answer": "INSERT",
+    "explanation": "INSERT fügt neue Datensätze in eine Tabelle ein."
+  },
+  {
+    "question": "Schreibe die Abfrage für alle Daten aus der Tabelle customers:",
+    "type": "copy",
+    "options": [
+      "SELECT * FROM customers;",
+      "GET * FROM customers;",
+      "SHOW customers;"
+    ],
+    "answer": "SELECT * FROM customers;",
+    "explanation": "SELECT * FROM customers; gibt alle Spalten zurück."
+  },
+  {
+    "question": "Welche Klausel filtert Ergebnisse?",
+    "type": "mc",
+    "options": ["ORDER BY", "WHERE", "GROUP BY", "SELECT"],
+    "answer": "WHERE",
+    "explanation": "WHERE filtert Datensätze anhand von Bedingungen."
+  },
+  {
+    "question": "Wie schreibt man ein Datum in SQL?",
+    "type": "text",
+    "answer": "YYYY-MM-DD",
+    "explanation": "SQL verwendet das Format Jahr-Monat-Tag."
+  },
+  {
+    "question": "Was macht LIKE '%a%'?",
+    "type": "mc",
+    "options": [
+      "Beginnt mit a",
+      "Endet mit a",
+      "Enthält ein a",
+      "Genau ein a"
+    ],
+    "answer": "Enthält ein a",
+    "explanation": "% steht für beliebig viele Zeichen davor und danach."
+  },
+  {
+    "question": "Schreibe eine WHERE-Bedingung für Preise über 100:",
+    "type": "copy",
+    "options": [
+      "WHERE price > 100",
+      "WHERE price = 100",
+      "WHERE price < 100"
+    ],
+    "answer": "WHERE price > 100",
+    "explanation": "> bedeutet größer als."
+  },
+  {
+    "question": "Welcher Operator wird für Bereichsabfragen verwendet?",
+    "type": "text",
+    "answer": "BETWEEN",
+    "explanation": "BETWEEN prüft, ob ein Wert zwischen zwei Grenzen liegt."
+  },
+  {
+    "question": "Was macht BETWEEN 10 AND 20?",
+    "type": "mc",
+    "options": [
+      "Nur 10",
+      "Nur 20",
+      "Zwischen 10 und 20 inklusive",
+      "Nur Werte größer 20"
+    ],
+    "answer": "Zwischen 10 und 20 inklusive",
+    "explanation": "BETWEEN schließt beide Grenzen mit ein."
+  },
+  {
+    "question": "Schreibe eine Abfrage für alle Produkte:",
+    "type": "copy",
+    "options": [
+      "SELECT * FROM products;",
+      "SELECT products;",
+      "GET * FROM products;"
+    ],
+    "answer": "SELECT * FROM products;",
+    "explanation": "SELECT * zeigt alle Spalten."
+  },
+  {
+    "question": "Welches Zeichen steht bei LIKE für beliebig viele Zeichen?",
+    "type": "text",
+    "answer": "%",
+    "explanation": "% steht für 0 bis unendlich viele Zeichen."
+  },
+  {
+    "question": "Was macht LIKE 'A%'?",
+    "type": "mc",
+    "options": [
+      "Endet mit A",
+      "Enthält A",
+      "Beginnt mit A",
+      "Hat genau ein A"
+    ],
+    "answer": "Beginnt mit A",
+    "explanation": "% nach A bedeutet alles danach ist egal."
+  },
+  {
+    "question": "Schreibe eine Abfrage für Kunden mit Namen 'Müller':",
+    "type": "copy",
+    "options": [
+      "WHERE name = 'Müller'",
+      "WHERE name LIKE Müller",
+      "WHERE name == Müller"
+    ],
+    "answer": "WHERE name = 'Müller'",
+    "explanation": "Textwerte müssen in Anführungszeichen stehen."
+  },
+  {
+    "question": "Welcher Operator prüft Gleichheit?",
+    "type": "text",
+    "answer": "=",
+    "explanation": "= prüft, ob zwei Werte gleich sind."
+  },
+  {
+    "question": "Was macht SELECT price * 1.19?",
+    "type": "mc",
+    "options": [
+      "Filtert Preise",
+      "Sortiert Preise",
+      "Berechnet neue Werte",
+      "Löscht Preise"
+    ],
+    "answer": "Berechnet neue Werte",
+    "explanation": "SQL kann Berechnungen im SELECT durchführen."
+  },
+  {
+    "question": "Schreibe eine Berechnung für 19% Steuer:",
+    "type": "copy",
+    "options": [
+      "price * 0.19",
+      "price + 19",
+      "price / 19"
+    ],
+    "answer": "price * 0.19",
+    "explanation": "19% entspricht 0.19."
+  },
+  {
+    "question": "Was macht ORDER BY?",
+    "type": "mc",
+    "options": [
+      "Filtert",
+      "Sortiert",
+      "Löscht",
+      "Gruppiert"
+    ],
+    "answer": "Sortiert",
+    "explanation": "ORDER BY sortiert Ergebnisse."
+  },
+  {
+    "question": "Welches Schlüsselwort sortiert absteigend?",
+    "type": "text",
+    "answer": "DESC",
+    "explanation": "DESC = descending (absteigend)."
+  },
+  {
+    "question": "Schreibe eine Sortierung nach Preis:",
+    "type": "copy",
+    "options": [
+      "ORDER BY price",
+      "SORT price",
+      "GROUP price"
+    ],
+    "answer": "ORDER BY price",
+    "explanation": "ORDER BY sortiert nach einer Spalte."
+  },
+  {
+    "question": "Was macht AND in SQL?",
+    "type": "mc",
+    "options": [
+      "Oder-Verknüpfung",
+      "Und-Verknüpfung",
+      "Sortierung",
+      "Addition"
+    ],
+    "answer": "Und-Verknüpfung",
+    "explanation": "AND bedeutet, dass beide Bedingungen erfüllt sein müssen."
+  },
+  {
+    "question": "Welcher Operator steht für ODER?",
+    "type": "text",
+    "answer": "OR",
+    "explanation": "OR verbindet alternative Bedingungen."
+  },
+  {
+    "question": "Schreibe eine Bedingung für Preise zwischen 50 und 100:",
+    "type": "copy",
+    "options": [
+      "WHERE price BETWEEN 50 AND 100",
+      "WHERE price = 50 AND 100",
+      "WHERE price IN 50-100"
+    ],
+    "answer": "WHERE price BETWEEN 50 AND 100",
+    "explanation": "BETWEEN prüft einen Wertebereich."
+  },
+  {
+    "question": "Was macht LIKE '%abc'?",
+    "type": "mc",
+    "options": [
+      "Beginnt mit abc",
+      "Endet mit abc",
+      "Enthält abc",
+      "Hat genau abc"
+    ],
+    "answer": "Endet mit abc",
+    "explanation": "% davor bedeutet beliebige Zeichen davor."
+  },
+  {
+    "question": "Wie viele Zeichen ersetzt _ bei LIKE?",
+    "type": "text",
+    "answer": "1",
+    "explanation": "_ steht für genau ein Zeichen."
+  },
+  {
+    "question": "Schreibe eine LIKE-Abfrage für 'enthält abc':",
+    "type": "copy",
+    "options": [
+      "LIKE '%abc%'",
+      "LIKE 'abc'",
+      "LIKE '_abc_'"
+    ],
+    "answer": "LIKE '%abc%'",
+    "explanation": "% vor und nach dem Text bedeutet: irgendwo enthalten."
+  },
+  {
+    "question": "Was macht DELETE?",
+    "type": "mc",
+    "options": [
+      "Lesen",
+      "Einfügen",
+      "Löschen",
+      "Sortieren"
+    ],
+    "answer": "Löschen",
+    "explanation": "DELETE entfernt Datensätze."
+  },
+  {
+    "question": "Welcher Befehl ändert Daten?",
+    "type": "text",
+    "answer": "UPDATE",
+    "explanation": "UPDATE verändert bestehende Daten."
+  },
+  {
+    "question": "Schreibe ein UPDATE-Grundgerüst:",
+    "type": "copy",
+    "options": [
+      "UPDATE table SET spalte = wert",
+      "CHANGE table TO wert",
+      "MODIFY table"
+    ],
+    "answer": "UPDATE table SET spalte = wert",
+    "explanation": "UPDATE verändert Werte in einer Tabelle."
+  },
+  {
+  "question": "Was macht SELECT?",
+  "type": "mc",
+  "options": [
+    "Sortiert Daten",
+    "Wählt Spalten aus",
+    "Löscht Daten",
+    "Gruppiert Daten"
+  ],
+  "answer": "Wählt Spalten aus",
+  "explanation": "SELECT bestimmt, welche Spalten angezeigt werden."
+},
+{
+  "question": "Welches Schlüsselwort bestimmt die Datenquelle?",
+  "type": "text",
+  "answer": "FROM",
+  "explanation": "FROM gibt an, aus welcher Tabelle die Daten kommen."
+},
+{
+  "question": "Schreibe eine Abfrage für alle Spalten aus 'kunden':",
+  "type": "copy",
+  "options": [
+    "SELECT * FROM kunden",
+    "GET ALL kunden",
+    "SHOW kunden"
+  ],
+  "answer": "SELECT * FROM kunden",
+  "explanation": "* steht für alle Spalten."
+},
+{
+  "question": "Was macht WHERE?",
+  "type": "mc",
+  "options": [
+    "Sortiert",
+    "Filtert Zeilen",
+    "Gruppiert",
+    "Verbindet Tabellen"
+  ],
+  "answer": "Filtert Zeilen",
+  "explanation": "WHERE schränkt die Ergebnismenge ein."
+},
+{
+  "question": "Welches Schlüsselwort gruppiert Daten?",
+  "type": "text",
+  "answer": "GROUP BY",
+  "explanation": "GROUP BY fasst Datensätze zusammen."
+},
+{
+  "question": "Was macht COUNT(*)?",
+  "type": "mc",
+  "options": [
+    "Addiert Werte",
+    "Zählt Zeilen",
+    "Sortiert",
+    "Filtert"
+  ],
+  "answer": "Zählt Zeilen",
+  "explanation": "COUNT(*) zählt alle Datensätze."
+},
+{
+  "question": "Welche Funktion berechnet den Durchschnitt?",
+  "type": "text",
+  "answer": "AVG",
+  "explanation": "AVG berechnet den Mittelwert."
+},
+{
+  "question": "Schreibe eine Zählung aller Kunden:",
+  "type": "copy",
+  "options": [
+    "SELECT COUNT(*) FROM kunden",
+    "SELECT SUM(*) FROM kunden",
+    "SELECT kunden COUNT"
+  ],
+  "answer": "SELECT COUNT(*) FROM kunden",
+  "explanation": "COUNT(*) zählt alle Zeilen."
+},
+{
+  "question": "Was macht GROUP BY?",
+  "type": "mc",
+  "options": [
+    "Sortiert Daten",
+    "Gruppiert Daten",
+    "Filtert Daten",
+    "Löscht Daten"
+  ],
+  "answer": "Gruppiert Daten",
+  "explanation": "GROUP BY fasst gleiche Werte zusammen."
+},
+{
+  "question": "Welches Schlüsselwort filtert Gruppen?",
+  "type": "text",
+  "answer": "HAVING",
+  "explanation": "HAVING wird nach GROUP BY verwendet."
+},
+{
+  "question": "Was ist der Unterschied zwischen WHERE und HAVING?",
+  "type": "mc",
+  "options": [
+    "Kein Unterschied",
+    "WHERE für Gruppen, HAVING für Zeilen",
+    "WHERE für Zeilen, HAVING für Gruppen",
+    "HAVING sortiert"
+  ],
+  "answer": "WHERE für Zeilen, HAVING für Gruppen",
+  "explanation": "WHERE filtert vor der Gruppierung, HAVING danach."
+},
+{
+  "question": "Schreibe eine Gruppierung nach Stadt:",
+  "type": "copy",
+  "options": [
+    "GROUP BY stadt",
+    "ORDER BY stadt",
+    "WHERE stadt"
+  ],
+  "answer": "GROUP BY stadt",
+  "explanation": "GROUP BY fasst gleiche Städte zusammen."
+},
+{
+  "question": "Was macht SUM()?",
+  "type": "mc",
+  "options": [
+    "Zählt",
+    "Addiert Werte",
+    "Sortiert",
+    "Filtert"
+  ],
+  "answer": "Addiert Werte",
+  "explanation": "SUM berechnet die Summe."
+},
+{
+  "question": "Welche Funktion gibt den kleinsten Wert zurück?",
+  "type": "text",
+  "answer": "MIN",
+  "explanation": "MIN liefert den kleinsten Wert."
+},
+{
+  "question": "Welche Funktion gibt den größten Wert zurück?",
+  "type": "text",
+  "answer": "MAX",
+  "explanation": "MAX liefert den größten Wert."
+},
+{
+  "question": "Was macht JOIN?",
+  "type": "mc",
+  "options": [
+    "Filtert Daten",
+    "Verbindet Tabellen",
+    "Sortiert Daten",
+    "Löscht Daten"
+  ],
+  "answer": "Verbindet Tabellen",
+  "explanation": "JOIN kombiniert Daten aus mehreren Tabellen."
+},
+{
+  "question": "Welches Schlüsselwort verbindet Tabellen?",
+  "type": "text",
+  "answer": "JOIN",
+  "explanation": "JOIN wird verwendet, um Tabellen zu kombinieren."
+},
+{
+  "question": "Schreibe ein JOIN-Grundgerüst:",
+  "type": "copy",
+  "options": [
+    "FROM tabelle1 JOIN tabelle2 ON id = id",
+    "CONNECT tabelle1 tabelle2",
+    "MERGE tabelle1 tabelle2"
+  ],
+  "answer": "FROM tabelle1 JOIN tabelle2 ON id = id",
+  "explanation": "JOIN verbindet Tabellen über eine Bedingung."
+},
+{
+  "question": "Was macht ORDER BY DESC?",
+  "type": "mc",
+  "options": [
+    "Aufsteigend sortieren",
+    "Absteigend sortieren",
+    "Filtern",
+    "Gruppieren"
+  ],
+  "answer": "Absteigend sortieren",
+  "explanation": "DESC sortiert absteigend."
+},
+{
+  "question": "In welcher Reihenfolge läuft SQL intern zuerst?",
+  "type": "mc",
+  "options": [
+    "SELECT",
+    "FROM",
+    "ORDER BY",
+    "HAVING"
+  ],
+  "answer": "FROM",
+  "explanation": "Die Datenquelle wird zuerst bestimmt."
+},
+{
+  "question": "Was macht die Bedingung preis > 100?",
+  "type": "mc",
+  "options": [
+    "Filtert Werte kleiner 100",
+    "Filtert Werte größer 100",
+    "Sortiert nach Preis",
+    "Gruppiert nach Preis"
+  ],
+  "answer": "Filtert Werte größer 100",
+  "explanation": "> bedeutet größer als."
+},
+{
+  "question": "Welcher Operator bedeutet 'ungleich'?",
+  "type": "text",
+  "answer": "!=",
+  "explanation": "!= steht für ungleich (alternativ <>)."
+},
+{
+  "question": "Schreibe eine Bedingung für 'nicht Berlin':",
+  "type": "copy",
+  "options": [
+    "WHERE stadt != 'Berlin'",
+    "WHERE stadt = NOT 'Berlin'",
+    "WHERE NOT stadt = Berlin"
+  ],
+  "answer": "WHERE stadt != 'Berlin'",
+  "explanation": "!= oder <> bedeutet ungleich."
+},
+{
+  "question": "Was macht BETWEEN?",
+  "type": "mc",
+  "options": [
+    "Vergleicht zwei Tabellen",
+    "Prüft einen Wertebereich",
+    "Sortiert Daten",
+    "Zählt Werte"
+  ],
+  "answer": "Prüft einen Wertebereich",
+  "explanation": "BETWEEN prüft, ob ein Wert in einem Bereich liegt."
+},
+{
+  "question": "Schreibe eine Bedingung für Datum nach 2020:",
+  "type": "copy",
+  "options": [
+    "WHERE datum > '2020-01-01'",
+    "WHERE datum AFTER 2020",
+    "WHERE datum = 2020+"
+  ],
+  "answer": "WHERE datum > '2020-01-01'",
+  "explanation": "Datumsvergleiche funktionieren wie Zahlenvergleiche."
+},
+{
+  "question": "Was macht ORDER BY mit mehreren Spalten?",
+  "type": "mc",
+  "options": [
+    "Nur erste Spalte wird sortiert",
+    "Sortiert nach mehreren Kriterien",
+    "Gruppiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Sortiert nach mehreren Kriterien",
+  "explanation": "Es wird zuerst nach der ersten, dann nach der zweiten Spalte sortiert."
+},
+{
+  "question": "Welches Schlüsselwort kommt nach GROUP BY für Filter?",
+  "type": "text",
+  "answer": "HAVING",
+  "explanation": "HAVING filtert Gruppen."
+},
+{
+  "question": "Schreibe eine HAVING-Bedingung für mehr als 5 Einträge:",
+  "type": "copy",
+  "options": [
+    "HAVING COUNT(*) > 5",
+    "WHERE COUNT(*) > 5",
+    "GROUP BY COUNT > 5"
+  ],
+  "answer": "HAVING COUNT(*) > 5",
+  "explanation": "HAVING wird mit Aggregatfunktionen verwendet."
+},
+{
+  "question": "Was macht AVG(preis)?",
+  "type": "mc",
+  "options": [
+    "Zählt Preise",
+    "Berechnet Durchschnitt",
+    "Sortiert Preise",
+    "Filtert Preise"
+  ],
+  "answer": "Berechnet Durchschnitt",
+  "explanation": "AVG berechnet den Mittelwert."
+},
+{
+  "question": "Schreibe eine Durchschnittsberechnung:",
+  "type": "copy",
+  "options": [
+    "SELECT AVG(preis) FROM produkte",
+    "SELECT SUM(preis) FROM produkte",
+    "SELECT COUNT(preis) FROM produkte"
+  ],
+  "answer": "SELECT AVG(preis) FROM produkte",
+  "explanation": "AVG berechnet den Durchschnitt."
+},
+{
+  "question": "Was macht ROUND()?",
+  "type": "mc",
+  "options": [
+    "Sortiert Werte",
+    "Rundet Zahlen",
+    "Zählt Werte",
+    "Filtert Werte"
+  ],
+  "answer": "Rundet Zahlen",
+  "explanation": "ROUND rundet Zahlen auf oder ab."
+},
+{
+  "question": "Welches Schlüsselwort gibt einen Alias?",
+  "type": "text",
+  "answer": "AS",
+  "explanation": "AS benennt eine Spalte um."
+},
+{
+  "question": "Schreibe einen Alias für COUNT:",
+  "type": "copy",
+  "options": [
+    "COUNT(*) AS anzahl",
+    "COUNT(*) NAME anzahl",
+    "COUNT(*) = anzahl"
+  ],
+  "answer": "COUNT(*) AS anzahl",
+  "explanation": "AS definiert einen neuen Spaltennamen."
+},
+{
+  "question": "Was macht USING beim JOIN?",
+  "type": "mc",
+  "options": [
+    "Vergleicht Tabellen",
+    "Verbindet über gleiche Spaltennamen",
+    "Sortiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Verbindet über gleiche Spaltennamen",
+  "explanation": "USING wird verwendet, wenn beide Tabellen die gleiche Spalte haben."
+},
+{
+  "question": "Was macht NOT?",
+  "type": "mc",
+  "options": [
+    "Verneint eine Bedingung",
+    "Sortiert Daten",
+    "Gruppiert Daten",
+    "Zählt Daten"
+  ],
+  "answer": "Verneint eine Bedingung",
+  "explanation": "NOT kehrt eine Bedingung um."
+},
+{
+  "question": "Schreibe eine NOT-Bedingung:",
+  "type": "copy",
+  "options": [
+    "WHERE NOT stadt = 'Berlin'",
+    "WHERE stadt NOT Berlin",
+    "WHERE stadt != Berlin OR"
+  ],
+  "answer": "WHERE NOT stadt = 'Berlin'",
+  "explanation": "NOT negiert eine Bedingung."
+},
+{
+  "question": "Was macht SUM(preis * menge)?",
+  "type": "mc",
+  "options": [
+    "Zählt Bestellungen",
+    "Berechnet Gesamtwert",
+    "Sortiert Daten",
+    "Filtert Daten"
+  ],
+  "answer": "Berechnet Gesamtwert",
+  "explanation": "Multiplikation innerhalb von SUM ergibt Gesamtumsatz."
+},
+{
+  "question": "Welche Klausel kommt zuletzt?",
+  "type": "mc",
+  "options": [
+    "WHERE",
+    "GROUP BY",
+    "ORDER BY",
+    "FROM"
+  ],
+  "answer": "ORDER BY",
+  "explanation": "ORDER BY ist der letzte Schritt."
+},
+{
+  "question": "Was passiert ohne WHERE?",
+  "type": "mc",
+  "options": [
+    "Keine Daten",
+    "Alle Daten werden angezeigt",
+    "Nur ein Datensatz",
+    "Fehler"
+  ],
+  "answer": "Alle Daten werden angezeigt",
+  "explanation": "Ohne WHERE gibt es keine Einschränkung."
+},
+{
+  "question": "Was macht COUNT(spalte)?",
+  "type": "mc",
+  "options": [
+    "Zählt alle Zeilen",
+    "Zählt nur nicht-NULL Werte",
+    "Sortiert Werte",
+    "Filtert Werte"
+  ],
+  "answer": "Zählt nur nicht-NULL Werte",
+  "explanation": "COUNT(spalte) ignoriert NULL-Werte."
+},
+{
+  "question": "Was macht ein INNER JOIN?",
+  "type": "mc",
+  "options": [
+    "Zeigt alle Daten aus beiden Tabellen",
+    "Zeigt nur übereinstimmende Daten",
+    "Zeigt nur linke Tabelle",
+    "Sortiert Daten"
+  ],
+  "answer": "Zeigt nur übereinstimmende Daten",
+  "explanation": "INNER JOIN zeigt nur Datensätze, die in beiden Tabellen vorkommen."
+},
+{
+  "question": "Was macht ein LEFT JOIN?",
+  "type": "mc",
+  "options": [
+    "Nur rechte Tabelle",
+    "Nur übereinstimmende Daten",
+    "Alle Daten links + passende rechts",
+    "Nur leere Werte"
+  ],
+  "answer": "Alle Daten links + passende rechts",
+  "explanation": "LEFT JOIN behält alle linken Datensätze, auch ohne Match."
+},
+{
+  "question": "Was passiert bei LEFT JOIN ohne passenden Eintrag?",
+  "type": "mc",
+  "options": [
+    "Zeile wird gelöscht",
+    "Fehler entsteht",
+    "NULL-Werte werden eingefügt",
+    "Zeile wird dupliziert"
+  ],
+  "answer": "NULL-Werte werden eingefügt",
+  "explanation": "Fehlende Werte werden als NULL dargestellt."
+},
+{
+  "question": "Welches Schlüsselwort prüft auf NULL?",
+  "type": "text",
+  "answer": "IS NULL",
+  "explanation": "NULL wird mit IS NULL geprüft, nicht mit =."
+},
+{
+  "question": "Warum funktioniert '= NULL' nicht?",
+  "type": "mc",
+  "options": [
+    "Syntaxfehler",
+    "NULL ist kein normaler Wert",
+    "Zu langsam",
+    "Nur bei Zahlen"
+  ],
+  "answer": "NULL ist kein normaler Wert",
+  "explanation": "NULL bedeutet 'unbekannt' und kann nicht direkt verglichen werden."
+},
+{
+  "question": "Schreibe eine NULL-Prüfung:",
+  "type": "copy",
+  "options": [
+    "WHERE spalte IS NULL",
+    "WHERE spalte = NULL",
+    "WHERE spalte == NULL"
+  ],
+  "answer": "WHERE spalte IS NULL",
+  "explanation": "IS NULL ist die korrekte Schreibweise."
+},
+{
+  "question": "Was macht IS NOT NULL?",
+  "type": "mc",
+  "options": [
+    "Filtert leere Werte",
+    "Filtert nicht-leere Werte",
+    "Sortiert Daten",
+    "Gruppiert Daten"
+  ],
+  "answer": "Filtert nicht-leere Werte",
+  "explanation": "IS NOT NULL zeigt nur vorhandene Werte."
+},
+{
+  "question": "Was ist eine Subquery?",
+  "type": "mc",
+  "options": [
+    "Eine Sortierung",
+    "Eine Abfrage in einer Abfrage",
+    "Ein JOIN",
+    "Ein Filter"
+  ],
+  "answer": "Eine Abfrage in einer Abfrage",
+  "explanation": "Subqueries sind verschachtelte Abfragen."
+},
+{
+  "question": "Welches Schlüsselwort wird oft mit Subqueries verwendet?",
+  "type": "text",
+  "answer": "IN",
+  "explanation": "IN wird häufig genutzt, um mehrere Werte zu vergleichen."
+},
+{
+  "question": "Was macht IN?",
+  "type": "mc",
+  "options": [
+    "Vergleicht einen Wert",
+    "Vergleicht mehrere Werte",
+    "Sortiert Daten",
+    "Gruppiert Daten"
+  ],
+  "answer": "Vergleicht mehrere Werte",
+  "explanation": "IN prüft, ob ein Wert in einer Liste enthalten ist."
+},
+{
+  "question": "Schreibe eine IN-Bedingung:",
+  "type": "copy",
+  "options": [
+    "WHERE stadt IN ('Berlin','Hamburg')",
+    "WHERE stadt = ('Berlin','Hamburg')",
+    "WHERE stadt HAS Berlin"
+  ],
+  "answer": "WHERE stadt IN ('Berlin','Hamburg')",
+  "explanation": "IN prüft mehrere Werte gleichzeitig."
+},
+{
+  "question": "Was macht eine Subquery im WHERE?",
+  "type": "mc",
+  "options": [
+    "Sortiert Daten",
+    "Liefert Werte für Vergleich",
+    "Gruppiert Daten",
+    "Löscht Daten"
+  ],
+  "answer": "Liefert Werte für Vergleich",
+  "explanation": "Das Ergebnis der Subquery wird im WHERE genutzt."
+},
+{
+  "question": "Was macht EXISTS?",
+  "type": "mc",
+  "options": [
+    "Prüft ob Daten existieren",
+    "Sortiert Daten",
+    "Zählt Daten",
+    "Gruppiert Daten"
+  ],
+  "answer": "Prüft ob Daten existieren",
+  "explanation": "EXISTS prüft, ob eine Subquery Ergebnisse liefert."
+},
+{
+  "question": "Wann ist EXISTS TRUE?",
+  "type": "mc",
+  "options": [
+    "Wenn keine Daten vorhanden sind",
+    "Wenn mindestens ein Datensatz existiert",
+    "Wenn alle Werte gleich sind",
+    "Wenn NULL vorhanden ist"
+  ],
+  "answer": "Wenn mindestens ein Datensatz existiert",
+  "explanation": "EXISTS ist TRUE, sobald die Subquery ein Ergebnis hat."
+},
+{
+  "question": "Was macht COUNT(*) bei NULL-Werten?",
+  "type": "mc",
+  "options": [
+    "Ignoriert NULL",
+    "Zählt alle Zeilen",
+    "Fehler",
+    "Sortiert NULL"
+  ],
+  "answer": "Zählt alle Zeilen",
+  "explanation": "COUNT(*) zählt jede Zeile, auch mit NULL."
+},
+{
+  "question": "Was macht COUNT(spalte) bei NULL?",
+  "type": "mc",
+  "options": [
+    "Zählt alle",
+    "Ignoriert NULL-Werte",
+    "Fehler",
+    "Sortiert Werte"
+  ],
+  "answer": "Ignoriert NULL-Werte",
+  "explanation": "Nur nicht-NULL Werte werden gezählt."
+},
+{
+  "question": "Schreibe eine Subquery-Struktur:",
+  "type": "copy",
+  "options": [
+    "SELECT * FROM tabelle WHERE id IN (SELECT id FROM tabelle2)",
+    "SELECT FROM WHERE SUB",
+    "JOIN SUBQUERY"
+  ],
+  "answer": "SELECT * FROM tabelle WHERE id IN (SELECT id FROM tabelle2)",
+  "explanation": "Subqueries stehen oft in Klammern im WHERE."
+},
+{
+  "question": "Was ist der Unterschied zwischen IN und EXISTS?",
+  "type": "mc",
+  "options": [
+    "Kein Unterschied",
+    "IN vergleicht Werte, EXISTS prüft Existenz",
+    "EXISTS sortiert",
+    "IN gruppiert"
+  ],
+  "answer": "IN vergleicht Werte, EXISTS prüft Existenz",
+  "explanation": "IN nutzt Werte, EXISTS prüft nur ob etwas da ist."
+},
+{
+  "question": "Wann nutzt man LEFT JOIN statt INNER JOIN?",
+  "type": "mc",
+  "options": [
+    "Wenn nur Matches wichtig sind",
+    "Wenn alle linken Daten erhalten bleiben sollen",
+    "Zum Sortieren",
+    "Zum Zählen"
+  ],
+  "answer": "Wenn alle linken Daten erhalten bleiben sollen",
+  "explanation": "LEFT JOIN zeigt auch Datensätze ohne Match."
+},
+{
+  "question": "Schreibe einen LEFT JOIN:",
+  "type": "copy",
+  "options": [
+    "FROM kunden LEFT JOIN bestellungen ON kunden.id = bestellungen.kunden_id",
+    "FROM kunden JOIN LEFT bestellungen",
+    "LEFT kunden TO bestellungen"
+  ],
+  "answer": "FROM kunden LEFT JOIN bestellungen ON kunden.id = bestellungen.kunden_id",
+  "explanation": "LEFT JOIN verbindet Tabellen mit Erhalt der linken Seite."
+}
+]
