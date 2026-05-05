@@ -11,6 +11,12 @@ fetch("questions.json")
     loadQuestion();
   });
 
+document.getElementById("textAnswer").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkAnswer(e.target.value);
+  }
+});
+
 function loadQuestion() {
   let q = questions[current];
 
@@ -20,7 +26,7 @@ function loadQuestion() {
   document.getElementById("feedback").innerHTML = "";
   document.getElementById("textAnswer").value = "";
 
-  document.getElementById("nextBtn").style.display = "none";
+  document.getElementById("nextBtn").style.display = "block";
 
   let answersDiv = document.getElementById("answers");
   answersDiv.innerHTML = "";
@@ -44,11 +50,6 @@ function loadQuestion() {
   else if (q.type === "text") {
     document.getElementById("textAnswer").style.display = "block";
 
-    document.getElementById("textAnswer").onkeydown = (e) => {
-      if (e.key === "Enter") {
-        checkAnswer(document.getElementById("textAnswer").value);
-      }
-    };
   }
 
   // COPY
@@ -118,6 +119,34 @@ function checkAnswer(value) {
 }
 
 function nextQuestion() {
+  let q = questions[current];
+
+  // Wenn noch nicht beantwortet → prüfen
+  if (!answered) {
+
+    // TEXT oder COPY → Eingabe prüfen
+    if (q.type === "text" || q.type === "copy") {
+      let value = document.getElementById("textAnswer").value;
+
+      if (!value.trim()) {
+        let feedback = document.getElementById("feedback");
+        feedback.className = "wrong";
+        feedback.innerHTML = "Bitte gib zuerst eine Antwort ein.";
+        return;
+      }
+
+      checkAnswer(value);
+      return;
+    }
+
+    // MC → nichts gewählt
+    let feedback = document.getElementById("feedback");
+    feedback.className = "wrong";
+    feedback.innerHTML = "Bitte wähle zuerst eine Antwort aus.";
+    return;
+  }
+
+  // Wenn schon beantwortet → nächste Frage
   current++;
 
   if (current < questions.length) {
